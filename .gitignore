@@ -1,0 +1,24 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境 (如果有)
+venv/
+env/
+.env
+
+# IDE 配置
+.idea/
+.vscode/
+
+data/
+MNIST/
+KMNIST/
+FashionMNIST/
+paper/
+
+
+# 系统文件
+.DS_Store
+Thumbs.db

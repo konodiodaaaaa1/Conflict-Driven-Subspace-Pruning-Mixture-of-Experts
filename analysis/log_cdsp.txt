@@ -1,0 +1,32 @@
+D:\AI\conda\envs\pytorch-transformer\python.exe D:\AI\test\CDSP-MoE\train_cdsp_mnist.py 
+=== Training CDSP-MoE on cuda ===
+Experiment: cdsp_mnist_3task
+[Topology] Initialized Alpha: Diagonal=1.0, Off-diagonal~0.1
+[Topology] Initialized Alpha: Diagonal=1.0, Off-diagonal~0.1
+[SystemMonitor] Artifacts will be saved to: D:\AI\test\CDSP-MoE\analysis\pic\cdsp_mnist_3task
+Epoch 1/10: 100%|██████████| 2813/2813 [04:27<00:00, 10.53it/s, Loss=0.4353, Aux=6.064e-04, Acc=78.12%, T0=78%, T1=71%, T2=89%]
+Epoch 1 Summary: Loss=0.7020, Acc=72.72%
+Epoch 2/10: 100%|██████████| 2813/2813 [04:40<00:00, 10.03it/s, Loss=0.3531, Aux=6.250e-04, Acc=84.38%, T0=88%, T1=77%, T2=91%]
+Epoch 2 Summary: Loss=0.4204, Acc=83.42%
+Epoch 3/10: 100%|██████████| 2813/2813 [04:42<00:00,  9.96it/s, Loss=0.3734, Aux=6.355e-04, Acc=87.50%, T0=90%, T1=90%, T2=83%]
+Epoch 3 Summary: Loss=0.3018, Acc=88.44%
+Epoch 4/10: 100%|██████████| 2813/2813 [04:30<00:00, 10.38it/s, Loss=0.3527, Aux=6.385e-04, Acc=90.62%, T0=93%, T1=88%, T2=90%]
+Epoch 4 Summary: Loss=0.2461, Acc=90.60%
+Epoch 5/10: 100%|██████████| 2813/2813 [04:45<00:00,  9.86it/s, Loss=0.1792, Aux=6.401e-04, Acc=87.50%, T0=89%, T1=83%, T2=91%]
+Epoch 5 Summary: Loss=0.2181, Acc=91.82%
+Epoch 6/10: 100%|██████████| 2813/2813 [04:42<00:00,  9.97it/s, Loss=0.1724, Aux=6.425e-04, Acc=93.75%, T0=100%, T1=91%, T2=93%]
+Epoch 6 Summary: Loss=0.1990, Acc=92.67%
+Epoch 7/10: 100%|██████████| 2813/2813 [04:39<00:00, 10.05it/s, Loss=0.1887, Aux=6.455e-04, Acc=93.75%, T0=100%, T1=100%, T2=83%]
+Epoch 7 Summary: Loss=0.1848, Acc=93.18%
+Epoch 8/10: 100%|██████████| 2813/2813 [04:17<00:00, 10.92it/s, Loss=0.2293, Aux=6.442e-04, Acc=93.75%, T0=88%, T1=93%, T2=100%]
+Epoch 8 Summary: Loss=0.1813, Acc=93.26%
+Epoch 9/10: 100%|██████████| 2813/2813 [04:42<00:00,  9.97it/s, Loss=0.1427, Aux=6.453e-04, Acc=93.75%, T0=100%, T1=85%, T2=100%]
+Epoch 9 Summary: Loss=0.1709, Acc=93.73%
+Epoch 10/10: 100%|██████████| 2813/2813 [04:52<00:00,  9.63it/s, Loss=0.0531, Aux=6.378e-04, Acc=96.88%, T0=100%, T1=100%, T2=93%]
+Epoch 10 Summary: Loss=0.1628, Acc=94.05%
+=== Training Finished. Generating Final Reports... ===
+[Plotter] Loss curve saved to: D:\AI\test\CDSP-MoE\analysis\pic\cdsp_mnist_3task\loss_curve.png
+[Plotter] Metrics curve saved to: D:\AI\test\CDSP-MoE\analysis\pic\cdsp_mnist_3task\metrics_curve.png
+Results saved to: D:\AI\test\CDSP-MoE\analysis\pic\cdsp_mnist_3task
+
+进程已结束，退出代码为 0
