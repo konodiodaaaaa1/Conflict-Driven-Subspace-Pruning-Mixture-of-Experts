@@ -38,7 +38,7 @@ class GradientConflictEngine(nn.Module):
                 # 1. 获取连接强度 (Alpha)
                 # 我们只关心 expert_i 是否引用了 expert_j
                 # 如果 Alpha[i, j] 很小，即便有物理冲突，系统也不应该负责（因为并非该连接导致的）
-                connection_strength = self.topology.alpha[expert_i, expert_j]
+                connection_strength = torch.sigmoid(self.topology.alpha[expert_i, expert_j])
 
                 # 性能优化：如果根本没有连接意图，跳过昂贵的对齐计算
                 if connection_strength < 1e-3:
