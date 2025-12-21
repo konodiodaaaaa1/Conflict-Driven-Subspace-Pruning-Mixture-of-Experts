@@ -100,7 +100,7 @@ $$
 当专家 $i$ 被激活时，通过动态索引机制调用物理基座的特定子集进行计算。
 
 1. **子空间寻址 (Addressing)**:
-    根据控制力 $I_{i, \cdot}$ 选取 Top-$R$ 个物理维度索引 $\Omega_i$ (秩配额 $R$):
+    根据控制力 $I_{i, \cdot}$ 选取 Top-R 个物理维度索引 $\Omega_i$ (秩配额 $R$):
 
 $$
 \Omega_i = \text{TopK}(I_{i, \cdot}, k=R)
@@ -163,7 +163,7 @@ $$
 
 ### 6.1 冲突驱动剪枝 (Conflict-Driven Pruning)
 
-如果专家 $i$ 与专家 $j$ 存在高强度的连接 ($\alpha_{ij}$ 大)，且二者在参数更新上存在严重冲突 ($\mathcal{L}_{\text{conflict}}$ 大)，则通过梯度下降抑制连接强度 $\alpha_{ij}$。
+如果专家 $i$ 与专家 $j$ 存在高强度的连接 ($\alpha_{ij}$ 大)，且二者在参数更新上存在严重冲突 ($\mathcal{L}_{\text{conflict}}$ 大)，则通过梯度下降抑制连接强度 $\alpha$。
 
 $$
 \mathcal{L}_{prune} = \sum_{i,j} \text{Sigmoid}(\alpha_{ij}) \cdot \mathcal{L}_{\text{conflict}}(i, j)
