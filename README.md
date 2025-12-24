@@ -4,6 +4,10 @@
 
 **核心理念**: 利用“滞后梯度”计算参数更新方向的冲突程度，将其作为结构演化的负反馈信号，替代传统 MoE 的负载均衡辅助损失，实现神经网络拓扑结构的自适应稀疏化与模块化。
 
+[![arXiv](https://img.shields.io/badge/arXiv-2512.20291-b31b1b.svg)](https://arxiv.org/abs/2512.20291)
+
+Paper: [Mixture-of-Experts with Gradient Conflict-Driven Subspace Topology Pruning for Emergent Modularity](https://arxiv.org/abs/2512.20291)
+
 ---
 
 ## 1. 物理层：共享子空间基座 (Physical Subspace Backbone)
