@@ -11,13 +11,13 @@ class SystemRegularizer(nn.Module):
     系统状态正则化器 (System State Regularizer)
 
     职责：
-    1. 代谢惩罚 (Metabolic Cost): 模拟物理系统的能耗，抑制过多的连接。
+    1. 代谢惩罚 (Metabolic Cost): 模拟物理系统的能耗，抑制过多的连接，同时也要求其logit不会到负无穷以至于过早断开连接，即维持一定温度。
        L_metabolic = ||Alpha||_1
     2. 确定性惩罚 (Determinism Penalty): 迫使拓扑结构从模糊(Fuzzy)走向清晰(Binary)。
        通过最小化 Alpha 的熵或使用 Binary Cross Entropy 变体实现。
 
     物理意义：
-    - 代谢惩罚防止热力学无限膨胀（连接数爆炸）。
+    - 代谢惩罚防止热力学无限膨胀与无限断开。
     - 确定性惩罚模拟相变过程（从液态的各向同性变为固态的晶体结构）。
     """
 
